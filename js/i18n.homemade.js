@@ -286,8 +286,8 @@ function changeLanguage(language_){
 
     language = language_;
     arrayKeys.forEach((key)=> {
-        let pepe = document.getElementById(key);
-        pepe.removeChild(pepe.childNodes[0]);
+        let element = document.getElementById(key);
+        element.removeChild(element.childNodes[0]);
         setContentMessage(key);
     });
 }
