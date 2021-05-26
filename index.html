@@ -44,8 +44,8 @@
             <img src="img/main_photo.jpg" alt="Iyán Arcega">
           </div>
           <div class="header-titles">
-            <h2>Iyán Arcega</h2>
-            <h4>Frontend-developer</h4>
+            <h2 id='name'></h2>
+            <h4 id='job'></h4>
           </div>
         </div>
 
@@ -53,25 +53,25 @@
           <li class="active">
             <a href="#home" class="nav-anim">
               <span class="menu-icon lnr lnr-home"></span>
-              <span class="link-text">Inicio</span>
+              <span class="link-text" id='beginning'>Inicio</span>
             </a>
           </li>
           <li>
             <a href="#about-me" class="nav-anim">
               <span class="menu-icon lnr lnr-user"></span>
-              <span class="link-text">Quién soy</span>
+              <span class="link-text" id='who-i-am'>Quién soy</span>
             </a>
           </li>
           <li>
             <a href="#resume" class="nav-anim">
               <span class="menu-icon lnr lnr-graduation-hat"></span>
-              <span class="link-text">Resume</span>
+              <span class="link-text" id='resume'>Resume</span>
             </a>
           </li>
           <li>
             <a href="#contact" class="nav-anim">
               <span class="menu-icon lnr lnr-envelope"></span>
-              <span class="link-text">Contact</span>
+              <span class="link-text" id='contact'>Contact</span>
             </a>
           </li>
         </ul>
@@ -85,7 +85,7 @@
         </div>
 
         <div class="header-buttons">
-          <a href="#" target="_blank" class="btn btn-primary">Descargar CV</a>
+          <a href="#" target="_blank" class="btn btn-primary" id='download-cv'></a>
         </div>
 
         <div class="header-buttons">
@@ -93,19 +93,19 @@
             <ul>
 
               <li>
-                <span class="title">E-mail</span>
-                <span class="value">info@stringiyan.es</span>
+                <span class="title" id='title-email'></span>
+                <span class="value" id='email'></span>
               </li>
 
               <li>
-                <span class="title">Teléfono</span>
-                <span class="value">+34 633 83 24 13</span>
+                <span class="title" id='title-phone'></span>
+                <span class="value" id='number-phone'></span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="copyrights">© 2021 Todos los derechos reservados.</div>
+        <div class="copyrights" id='copyrights'></div>
       </header>
 
       <!-- Mobile Navigation -->
@@ -132,14 +132,14 @@
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="title-block">
-                    <h2>Iyán Arcega</h2>
+                    <h2 id="name-2"></h2>
                     <div class="owl-carousel text-rotation">
                       <div class="item">
-                        <div class="sp-subtitle">Web Designer</div>
+                        <div class="sp-subtitle" id='job-3'></div>
                       </div>
 
                       <div class="item">
-                        <div class="sp-subtitle">Frontend-developer</div>
+                        <div class="sp-subtitle" id='job-2'></div>
                       </div>
                     </div>
                   </div>
@@ -154,19 +154,13 @@
           <section data-id="about-me" class="animated-section">
             <div class="section-content">
               <div class="page-title">
-                <h2>Quién <span>soy</span></h2>
+                <h2 id='who'><span id='i'></span></h2>
               </div>
 
               <!-- Personal Information -->
               <div class="row">
                 <div class="col-xs-12 col-sm-12">
-                  <p>Me considero una persona seria, responsable y creativa, con muchas ganas de trabajar y nunca dejo de formarme de manera autodidacta,
-                    dispuesto a trabajar en equipo y en comprometerme con la empresa. Actualmente, estoy enfocando mi
-                    carrera al mundo Front End con tecnologías como Angular y Vue, pero también trabajo la parte Back
-                    End utilizando PHP. Además, también trabajo como freelance, y uno de mis mayores hobbies es crear
-                    aplicaciones para móviles utilizando ionic. También ofrezco
-                    servicios de marketing digital, ya que tengo conocimientos altos en SEO y SEM. Dispongo de carnet y
-                    coche propio. Soy deportista de alto nivel con la Universidad de Oviedo.</p>
+                  <p id="personal-information"></p>
                 </div>
 
               </div>
@@ -178,7 +172,7 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-12">
                   <div class="block-title">
-                    <h3>Qué <span>hago</span></h3>
+                    <h3 id='what'><span id='i-do'></span></h3>
                   </div>
                 </div>
               </div>
@@ -627,6 +621,7 @@
   <script src="js/jquery.googlemap.js"></script>
   <script src="js/validator.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/i18n.homemade.js"></script>
 </body>
 
 </html>
