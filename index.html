@@ -36,6 +36,11 @@
   <!-- /Loading animation -->
 
   <div class="page">
+    <div style="position: absolute; top: 35px; left: 50%; display: flex;"> 
+    <img src="./img/spain.png" alt="spain" width="60px" onclick="changeLanguage('es')">
+    <img src="./img/ing.jpg" alt="spain" width="60px" onclick="changeLanguage('en')">
+  </div>
+
     <div class="page-content">
 
       <header id="site_header" class="header mobile-menu-hide">
@@ -53,25 +58,25 @@
           <li class="active">
             <a href="#home" class="nav-anim">
               <span class="menu-icon lnr lnr-home"></span>
-              <span class="link-text" id='beginning'>Inicio</span>
+              <span class="link-text" id='beginning'></span>
             </a>
           </li>
           <li>
             <a href="#about-me" class="nav-anim">
               <span class="menu-icon lnr lnr-user"></span>
-              <span class="link-text" id='who-i-am'>Quién soy</span>
+              <span class="link-text" id='who-i-am'></span>
             </a>
           </li>
           <li>
             <a href="#resume" class="nav-anim">
               <span class="menu-icon lnr lnr-graduation-hat"></span>
-              <span class="link-text" id='resume'>Resume</span>
+              <span class="link-text" id='resume'></span>
             </a>
           </li>
           <li>
             <a href="#contact" class="nav-anim">
               <span class="menu-icon lnr lnr-envelope"></span>
-              <span class="link-text" id='contact'>Contact</span>
+              <span class="link-text" id='contact'></span>
             </a>
           </li>
         </ul>
@@ -154,7 +159,7 @@
           <section data-id="about-me" class="animated-section">
             <div class="section-content">
               <div class="page-title">
-                <h2 id='who'><span id='i'></span></h2>
+                <div style="display: flex;"><h2 id='who'></h2><span id='i' style="font-size:32px; color: #09aeea;"></span></div>
               </div>
 
               <!-- Personal Information -->
@@ -172,7 +177,7 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-12">
                   <div class="block-title">
-                    <h3 id='what'><span id='i-do'></span></h3>
+                    <div style="display: flex;"><h3 id="what"></h3><span id='i-do' style="font-size: 21px; color: #09aeea;"></span></div>
                   </div>
                 </div>
               </div>
@@ -186,8 +191,8 @@
                           <i class="lnr lnr-laptop-phone"></i>
                         </div>
                         <div class="ci-text">
-                          <h4>Diseño y desarrollo web</h4>
-                          <p>Programación de aplicaciones web a medida (buscadores, tiendas a medida, revistas, CRM...) y utilizando gestores de contenido (Wordpress, Prestashop, Joomla...).</p>
+                          <h4 id="design-and-development"></h4>
+                          <p id='design-and-development-info'></p>
                         </div>
                       </div>
                       <div class="info-block-w-icon">
@@ -195,8 +200,8 @@
                           <i class="lnr lnr-database"></i>
                         </div>
                         <div class="ci-text">
-                          <h4>Creación de API REST</h4>
-                          <p>Creación y consumo de API rest, e inegración con las aplicaciones. Manejo de bases de datos SQL y no relacionales (Firebase, MongoDB).</p>
+                          <h4 id='creation-api-rest'></h4>
+                          <p id='creation-api-rest-info'></p>
                         </div>
                       </div>
                     </div>
@@ -211,8 +216,8 @@
                           <i class="lnr lnr-smartphone"></i>
                         </div>
                         <div class="ci-text">
-                          <h4>Aplicaciones Móviles</h4>
-                          <p>Desarrollo de aplicaciones móviles híbridas (para iOS y Android), utilizando Angular o Vue a través de ionic. Creación de API rest y consumo de las mismas, para integraciones con web.</p>
+                          <h4 id='application-mobile'></h4>
+                          <p id='application-mobile-info'></p>
                         </div>
                       </div>
                       <div class="info-block-w-icon">
@@ -220,8 +225,8 @@
                           <i class="lnr lnr-pie-chart"></i>
                         </div>
                         <div class="ci-text">
-                          <h4>SEO / SEM</h4>
-                          <p>Realizo posicionmiento en buscadores y optimización de campañas de publicidad. Optimización web para mejorar su rankeo.</p>
+                          <h4 id='seo'></h4>
+                          <p id='seo-info'></p>
                         </div>
                       </div>
                     </div>
@@ -281,61 +286,61 @@
           <section data-id="resume" class="animated-section">
             <div class="section-content">
               <div class="page-title">
-                <h2>Resumen</h2>
+                <h2 id='page-title-resume'></h2>
               </div>
 
               <div class="row">
                 <div class="col-xs-12 col-sm-7">
 
                   <div class="block-title">
-                    <h3>Experiencia</h3>
+                    <h3 id='experience'></h3>
                   </div>
 
                   <div class="timeline timeline-second-style clearfix">
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">sep 2018 - actualidad</h5>
-                        <span class="item-company">Oviweb</span>
+                        <h5 class="item-period" id='job-period-1'></h5>
+                        <span class="item-company" id='company'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">Freelance</h4>
-                        <p>Freelancer FullStack y servicios de marketing online.</p>
+                        <h4 class="item-title" id='freelance'></h4>
+                        <p id='freelance-info'></p>
                       </div>
                     </div>
 
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">ene 2021 - jun 2021</h5>
-                        <span class="item-company">iAR</span>
+                        <h5 class="item-period" id='job-period-2'></h5>
+                        <span class="item-company" id='company-2'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">FrontEnd Developer</h4>
-                        <p>Desarrollo web utilizando VueJS y Angular. Consumo y creación de API REST.</p>
+                        <h4 class="item-title" id='frontend-dev'></h4>
+                        <p id="frontend-dev-info"></p>
                       </div>
                     </div>
 
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">jun 2020 - dic 2020</h5>
-                        <span class="item-company">Naranco Tecnológica</span>
+                        <h5 class="item-period" id='job-period-3'></h5>
+                        <span class="item-company" id='company-3'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">Director FrontEnd</h4>
-                        <p>Aplicaciones WEB utilizando Angular y Vue, aplicaciones móviles utilizando, desarrollo de API REST, creación de plugins y themes a medida para wordpress y prestashop. Análisis SEO y campañas SEM.</p>
+                        <h4 class="item-title" id='frontend-director'></h4>
+                        <p id='frontend-director-info'></p>
                       </div>
                     </div>
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">abr 2020 - jun 2020</h5>
-                        <span class="item-company">Neozink</span>
+                        <h5 class="item-period" id='job-period-4'></h5>
+                        <span class="item-company" id='company-4'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">FullStack Developer</h4>
-                        <p>Desarrollo de producto interno tanto FrontEnd como BackEnd. Desarrollo de API REST. Utilización de arquitectura BEM.</p>
+                        <h4 class="item-title" id='fullstack-dev'></h4>
+                        <p id='fullstack-dev-info'></p>
                       </div>
                     </div>
                   </div>
@@ -343,55 +348,55 @@
                   <div class="white-space-50"></div>
 
                   <div class="block-title">
-                    <h3>Formación</h3>
+                    <h3 id='training'></h3>
                   </div>
 
                   <div class="timeline timeline-second-style clearfix">
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">2018 - 2020</h5>
-                        <span class="item-company">Afa Formación</span>
+                        <h5 class="item-period" id='period-training'></h5>
+                        <span class="item-company" id='training-company'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">Desarrollo de aplicaciones web</h4>
-                        <p>Grado de desarrollo de aplicaciones web.</p>
+                        <h4 class="item-title" id='training-title'></h4>
+                        <p id='training-info'></p>
                       </div>
                     </div>
 
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">2019</h5>
-                        <span class="item-company">Pearson</span>
+                        <h5 class="item-period" id='period-training-2'></h5>
+                        <span class="item-company" id='training-company-2'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">B2 Inglés</h4>
-                        <p>Certificación de B2 de Inglés.</p>
+                        <h4 class="item-title" id='training-title-2'></h4>
+                        <p id='training-info-2'></p>
                       </div>
                     </div>
 
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">2019</h5>
-                        <span class="item-company">Udemy</span>
+                        <h5 class="item-period" id='period-training-3'></h5>
+                        <span class="item-company" id='training-company-3'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">JavaScript</h4>
-                        <p>Master en JavaScript (Angular jQuery)</p>
+                        <h4 class="item-title" id='training-title-3'></h4>
+                        <p id='training-info-3'></p>
                       </div>
                     </div>
 
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">2019</h5>
-                        <span class="item-company">FreeCodeCamp</span>
+                        <h5 class="item-period" id='period-training-4'></h5>
+                        <span class="item-company" id='training-company-4'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">JavaScript Algorithms and Data Structures</h4>
-                        <p>Curso de JavaScript y algunas librerías (d3.js, underscore.js, moment.js)</p>
+                        <h4 class="item-title" id='training-title-4'></h4>
+                        <p id='training-info-4'></p>
                       </div>
                     </div>
 
@@ -399,13 +404,13 @@
 
                     <div class="timeline-item clearfix">
                       <div class="left-part">
-                        <h5 class="item-period">2018</h5>
-                        <span class="item-company">Google</span>
+                        <h5 class="item-period" id='period-training-5'></h5>
+                        <span class="item-company" id='training-company-5'></span>
                       </div>
                       <div class="divider"></div>
                       <div class="right-part">
-                        <h4 class="item-title">Google Analytics</h4>
-                        <p>Certificación de Google Analytics Avanzado.</p>
+                        <h4 class="item-title" id='training-title-5'></h4>
+                        <p id='training-info-5'></p>
                       </div>
                     </div>
                     
@@ -418,14 +423,14 @@
                 <div class="col-xs-12 col-sm-5">
                   <!-- Design Skills -->
                   <div class="block-title">
-                    <h3>Stack <span>tecnológico</span></h3>
+                    <div style="display: flex;"><h3 id='skills-title-part-1'></h3><span id='skills-title-part-2' style="font-size: 21px; color: #09aeea;"></span></div>
                   </div>
 
                   <div class="skills-info skills-second-style">
                     <!-- Skill 1 -->
                     <div class="skill clearfix">
-                      <h4>FrontEnd (Angular 5+, VueJS)</h4>
-                      <div class="skill-value">95%</div>
+                      <h4 id='skill'></h4>
+                      <div class="skill-value" id='skill-value'></div>
                     </div>
                     <div class="skill-container skill-1">
                       <div class="skill-percentage"></div>
@@ -434,8 +439,8 @@
 
                     <!-- Skill 2 -->
                     <div class="skill clearfix">
-                      <h4>BackEnd (Slim, Laravel)</h4>
-                      <div class="skill-value">90%</div>
+                      <h4 id='skill-2'></h4>
+                      <div class="skill-value" id='skill-value-2'></div>
                     </div>
                     <div class="skill-container skill-4">
                       <div class="skill-percentage"></div>
@@ -444,8 +449,8 @@
 
                     <!-- Skill 3 -->
                     <div class="skill clearfix">
-                      <h4>SQL (MySQL, Postgres, Oracle)</h4>
-                      <div class="skill-value">80%</div>
+                      <h4 id='skill-3'></h4>
+                      <div class="skill-value" id='skill-value-3'></div>
                     </div>
                     <div class="skill-container skill-3">
                       <div class="skill-percentage"></div>
@@ -454,8 +459,8 @@
 
                     <!-- Skill 4 -->
                     <div class="skill clearfix">
-                      <h4>No SQL (Firebase, MongoDB)</h4>
-                      <div class="skill-value">80%</div>
+                      <h4 id='skill-4'></h4>
+                      <div class="skill-value" id='skill-value-4'></div>
                     </div>
                     <div class="skill-container skill-3">
                       <div class="skill-percentage"></div>
@@ -473,7 +478,7 @@
 
                   <!-- Knowledges -->
                   <div class="block-title">
-                    <h3>Resumen de <span>conocimientos</span></h3>
+                    <div style="display: flex;"><h3 id='title-part-1' style='white-space:nowrap;'></h3><span id='title-part-2' style="color: #09aeea; font-size:21px;"></span></div>
                   </div>
 
                   <ul class="knowledges">
@@ -506,7 +511,7 @@
           <section data-id="contact" class="animated-section">
             <div class="section-content">
               <div class="page-title">
-                <h2>Contacto</h2>
+                <h2 id='title-contact'></h2>
               </div>
 
               <div class="row">
@@ -541,7 +546,7 @@
                 <!-- Contact Form -->
                 <div class="col-xs-12 col-sm-8">
                   <div class="block-title">
-                    <h3>¿Hablamos?</h3>
+                    <h3 id='talk'></h3>
                   </div>
 
                   <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
@@ -554,7 +559,7 @@
                           <div class="form-group form-group-with-icon">
                             <input id="form_name" type="text" name="name" class="form-control" placeholder=""
                               required="required" data-error="Name is required.">
-                            <label>Nombre</label>
+                            <label id='input-name'></label>
                             <div class="form-control-border"></div>
                             <div class="help-block with-errors"></div>
                           </div>
@@ -562,7 +567,7 @@
                           <div class="form-group form-group-with-icon">
                             <input id="form_email" type="email" name="email" class="form-control" placeholder=""
                               required="required" data-error="Valid email is required.">
-                            <label>Email</label>
+                            <label id='input-email'></label>
                             <div class="form-control-border"></div>
                             <div class="help-block with-errors"></div>
                           </div>
@@ -570,7 +575,7 @@
                           <div class="form-group form-group-with-icon">
                             <input id="form_subject" type="text" name="subject" class="form-control" placeholder=""
                               required="required" data-error="Subject is required.">
-                            <label>Asunto</label>
+                            <label id='input-subject'></label>
                             <div class="form-control-border"></div>
                             <div class="help-block with-errors"></div>
                           </div>
@@ -579,7 +584,7 @@
                           <div class="form-group form-group-with-icon">
                             <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7"
                               required="required" data-error="Please, leave me a message."></textarea>
-                            <label>Mensaje</label>
+                            <label id='input-message'></label>
                             <div class="form-control-border"></div>
                             <div class="help-block with-errors"></div>
                           </div>
