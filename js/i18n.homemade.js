@@ -263,23 +263,10 @@ let i18nHomemade = {
     }
 };
 
-console.log("largo 1: ", i18nHomemade);
-console.log("largo 2: ", arrayKeys.length)
 
 function setContentMessage(id) {
     let element = document.getElementById(id);
-    if (!element) {
-        setTimeout(()=>{
-            element = document.getElementById(id);
-        }, 500);
-    }
-
-    setTimeout(()=> {
-        if (!element) {
-            console.log('s',id)
-        }
-        element.appendChild(document.createTextNode(i18nHomemade[id][language]));
-    }, !element ? 500 : 0);
+    element.appendChild(document.createTextNode(i18nHomemade[id][language]));
 }
 
 
