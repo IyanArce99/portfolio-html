@@ -1,11 +1,11 @@
 <?php
 
 // configure
-$from = 'info@yourdomain.com'; // Replace it with Your Hosting Admin email. REQUIRED!
-$sendTo = 'your@mail.com'; // Replace it with Your email. REQUIRED!
+$from = 'info@stringiyan.es'; // Replace it with Your Hosting Admin email. REQUIRED!
+$sendTo = 'info@stringiyan.es'; // Replace it with Your email. REQUIRED!
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // array variable name => Text to appear in the email. If you added or deleted a field in the contact form, edit this array.
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Mensaje enviado correctamente';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
 // let's do the sending

@@ -27,11 +27,11 @@ let i18nHomemade = {
         "es": "Quién soy",
         "en": "who i am"
     },"resume": {
-        "es": "Resume",
+        "es": "Resumen",
         "en": "Resume"
     },"contact": {
-        "es": "Contact",
-        "en": "Contacto"
+        "es": "Contacto",
+        "en": "Contact"
     },"download-cv": {
         "es": "Descargar CV",
         "en": "Download CV"
