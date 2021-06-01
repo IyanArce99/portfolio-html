@@ -278,16 +278,20 @@ window.onload = function () {
     });
 };
 
-
-function changeLanguage(language_){
-    if (language === language_){
-        return;
-    }
-
-    language = language_;
+document.getElementById('logo-en').style.display = 'none';
+function changeLanguage(){
+    if (language === 'es') {language = 'en'} else {language = 'es'};
     arrayKeys.forEach((key)=> {
         let element = document.getElementById(key);
         element.removeChild(element.childNodes[0]);
         setContentMessage(key);
     });
+    if (language === 'es') {
+        document.getElementById('logo-en').style.display = 'none';
+        document.getElementById('logo-es').style.display = 'block';
+    }else {
+        document.getElementById('logo-en').style.display = 'block';
+        document.getElementById('logo-es').style.display = 'none';
+    } 
 }
+
